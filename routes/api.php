@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\EventsController;
+use App\Http\Controllers\MenuController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -21,3 +22,4 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 
 Route::get('/events', [EventsController::class, 'getEventsWithWorkshops']);
 Route::get('/futureevents', [EventsController::class, 'getFutureEventsWithWorkshops']);
+Route::get('/menu', [MenuController::class, 'getMenuItems']);
