@@ -20,3 +20,4 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 });
 
 Route::get('/events', [EventsController::class, 'getEventsWithWorkshops']);
+Route::get('/futureevents', [EventsController::class, 'getFutureEventsWithWorkshops']);
