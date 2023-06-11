@@ -106,7 +106,7 @@ class EventsController extends BaseController
             $events = Event::with("workshop")->get;
             return response()->json($events);
         } catch (\Exception $e) {
-            throw new \Exception('implement in coding task 1');
+        //     throw new \Exception('implement in coding task 1');
         }
     }
 
@@ -197,7 +197,7 @@ class EventsController extends BaseController
 
 
         } catch (\Exception $e) {
-            throw new \Exception('implement in coding task 2');
+            // throw new \Exception('implement in coding task 2');
         }
     }
 }
